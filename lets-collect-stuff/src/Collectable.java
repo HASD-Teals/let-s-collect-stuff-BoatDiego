@@ -21,17 +21,19 @@ public class Collectable {
         this.bodies = 0;
         this.dripLevel = 0;
     }
-/**
- * Parameters for collectable
- * @param susLevel
- * @param Name
- * @param Color
- * @param imposter
- * @param thicc
- * @param vent
- * @param bodies
- * @param dripLevel
- */
+
+    /**
+     * Parameters for collectable
+     * 
+     * @param susLevel
+     * @param Name
+     * @param Color
+     * @param imposter
+     * @param thicc
+     * @param vent
+     * @param bodies
+     * @param dripLevel
+     */
     public Collectable(int susLevel, String Name, String Color, boolean imposter, boolean thicc, boolean vent,
             int bodies, double dripLevel) {
         this.susLevel = susLevel;
@@ -155,7 +157,44 @@ public class Collectable {
         return equal;
     }
 
+    public void toString(String input) {
+        switch (input) {
+            case "Name":
 
+                System.out.print(this.Name);
+                break;
+            case "Color":
 
+                System.out.print(this.Color);
+                break;
+
+            case "Sus Level":
+
+                System.out.print(this.susLevel);
+                break;
+            case "Imposter":
+
+                System.out.print(this.imposter);
+                break;
+            case "Thicc":
+
+                System.out.print(this.thicc);
+                break;
+
+            case "vented":
+
+                System.out.print(this.vent);
+                break;
+            case "bodies":
+
+                System.out.print(this.bodies);
+                break;
+            case "Drip Level":
+
+                System.out.print(this.dripLevel);
+                break;
+        }
+
+    }
 
 }
